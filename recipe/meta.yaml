@@ -1,5 +1,5 @@
 {% set name = "formulae" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/formulae-{{ version }}.tar.gz
-  sha256: aca06d8404c2075943eaa5a9610a0edfe12a25d312cdaaa3fcfd3c9330f08e83
+  sha256: e6149f6a37a61833a2cf27ac07b1d2a598747b07cd17d81ab7055f849cbd3b1e
 
 build:
   number: 0
@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://github.com/bambinos/formulae
-  summary: "An implementation of Wilkinson's formula language for statistical models à la lme4"
+  summary: An implementation of Wilkinson's formula language for statistical models à la lme4
   license: MIT
   license_file: LICENSE
 
