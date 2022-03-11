@@ -1,5 +1,5 @@
 {% set name = "formulae" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/formulae-{{ version }}.tar.gz
-  sha256: 228335df9907750793016dfb23a8a0cb8d6d9ce9a026bfe2b459aa19f72541d2
+  sha256: 5cf5bc6286495a4ba3d1e401cd330be4fa5050e256c6e8cd999a06a27772368b
 
 build:
   number: 0
