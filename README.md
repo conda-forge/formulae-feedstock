@@ -1,11 +1,11 @@
-About formulae
-==============
+About formulae-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/formulae-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/bambinos/formulae
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/formulae-feedstock/blob/main/LICENSE.txt)
 
 Summary: An implementation of Wilkinson's formula language for statistical models à la lme4
 
