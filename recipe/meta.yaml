@@ -11,14 +11,16 @@ source:
   sha256: b2d42e437cb138c2eaf8ae651bab98d27c6182f63b75bf8d3f51d873a0fe9e13
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
+    - setuptools_scm
   run:
     - python >=3.7
     - numpy >=1.16
