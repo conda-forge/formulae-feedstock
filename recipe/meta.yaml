@@ -1,5 +1,5 @@
 {% set name = "formulae" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/formulae-{{ version }}.tar.gz
-  sha256: 49586412cb7dcda90c2737b7d1bfb03deb9912867421bc082395c444cc661da2
+  sha256: c256c37bf40b5d61acc56faa174b97bc81b80722bdad97f4692dcc24b360af7f
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - packaging
     - python >={{ python_min }}
     - numpy >=1.16
-    - pandas >=1.0.0,<3.0.0
+    - pandas >=1.0.0
     - scipy >=1.5.4
 
 test:
