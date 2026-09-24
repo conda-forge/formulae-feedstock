@@ -1,5 +1,5 @@
 {% set name = "formulae" %}
-{% set version = "0.7.0" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/formulae-{{ version }}.tar.gz
-  sha256: c4b644adced7ae0627fc13fc8413b547e3477c2d046ed4704146ec7024ae6081
+  sha256: c44dcd1ae5b6dd310716b3c04d6b0f9ffda21731543ebf2a243a898151863850
 
 build:
   number: 0
