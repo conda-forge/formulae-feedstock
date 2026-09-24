@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  version: "0.9.0"
+
+package:
+  name: formulae
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/f/formulae/formulae-${{ version }}.tar.gz
+  sha256: c44dcd1ae5b6dd310716b3c04d6b0f9ffda21731543ebf2a243a898151863850
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=61.0
+    - setuptools-scm >=8
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.16
+    - packaging
+    - pandas >=1.0.0
+    - scipy >=1.5.4
+
+tests:
+  - python:
+      imports:
+        - formulae
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Formulas for mixed-effects models in Python
+  license: MIT
+  license_file: LICENSE
+  homepage: https://pypi.org/project/formulae/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
