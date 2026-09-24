@@ -3,11 +3,11 @@ About formulae-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/formulae-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/bambinos/formulae
+Home: https://pypi.org/project/formulae/
 
 Package license: MIT
 
-Summary: An implementation of Wilkinson's formula language for statistical models à la lme4
+Summary: Formulas for mixed-effects models in Python
 
 Current build status
 ====================
